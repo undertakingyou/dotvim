@@ -13,6 +13,11 @@ Plug 'hynek/vim-python-pep8-indent'    " for auto indenting pep8 style
 Plug 'python-rope/ropevim'             " refactoring, finding occurrences
 Plug 'python-mode/python-mode'
 
+" Javascript, JSX
+Plug 'mxw/vim-jsx'                     " JSX Specific tools
+Plug 'panglos/vim-javascript'          " Javascript Highlighter
+Plug 'elzr/vim-json'                   " JSON Formatting and pretty
+
 " home screen
 Plug 'mhinz/vim-startify'              " pretty start page
 
@@ -39,6 +44,7 @@ Plug 'michaeljsmith/vim-indent-object' " for selecting indent objects
 Plug 'kshenoy/vim-signature'           " visible marks
 Plug 'vim-scripts/Align'
 Plug 'godlygeek/tabular'               " align text, even tables
+Plug 'townk/vim-autoclose'             " autoclose opening characters
 
 " search
 Plug 'haya14busa/incsearch.vim'
@@ -67,6 +73,7 @@ Plug 'synic/jellybeans.vim'
 Plug 'jnurmine/Zenburn'
 Plug 'morhetz/gruvbox'
 Plug 'synic/synic.vim'
+Plug 'sickill/vim-monokai'
 
 " interface
 Plug 'bling/vim-airline'

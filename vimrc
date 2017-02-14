@@ -83,9 +83,9 @@ if has('vim_starting')
     endif
 endif
 
-" try to enable jellybeans theme, but if that fails, choose `ron`
+" try to enable monokai theme, but if that fails, choose `ron`
 try
-    colorscheme gruvbox
+    colorscheme monokai
     set background=dark
 catch /^Vim\%((\a\+)\)\=:E185/
     colorscheme ron
