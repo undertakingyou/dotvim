@@ -177,5 +177,5 @@ autocmd! bufwritepost pluginsettings.vim source %
 let g:jsx_ext_required = 0
 
 " vim-autoclose
-let g:AutoClosePairs = "() {} \"\'"
+let g:AutoClosePairs = "() {} \"\" \'\'"
 " vim:foldmethod=marker

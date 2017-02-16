@@ -21,7 +21,7 @@ Plug 'python-mode/python-mode'
 
 " Javascript, JSX
 Plug 'mxw/vim-jsx'                     " JSX Specific tools
-Plug 'panglos/vim-javascript'          " Javascript Highlighter
+Plug 'pangloss/vim-javascript'         " Javascript Highlighter
 Plug 'elzr/vim-json'                   " JSON Formatting and pretty
 
 " home screen
