@@ -12,8 +12,11 @@
 " skip init for vim-tiny or vim-small
 if 0 | endif
 
+" set $VIMHOME so we can load configuration files from the correct place
+let $VIMHOME = expand('<sfile>:p:h')
+
 " load plugins
-source ~/.vim/plugins.vim
+source $VIMHOME/config/plugins.vim
 
 " VIM Specific settings
 filetype plugin on
@@ -59,12 +62,15 @@ set noautoindent
 
 " setup auto wrapping
 set textwidth=78
+set formatoptions+=t
 set hidden
 set colorcolumn=80
 set number
 " set relativenumber  <- I don't really like this that much
 set noequalalways
-set dir=~/.vim/swap
+" attempt to create swap directory if it doesn't exist
+silent !mkdir $VIMHOME/swap > /dev/null 2>&1  
+set dir=$VIMHOME/swap
 set nobackup writebackup
 
 " enable project specific vim settings
@@ -101,6 +107,6 @@ autocmd! bufwritepost vimrc source %
 autocmd! bufwritepost gvimrc source %
 
 " load scripts
-source ~/.vim/pluginsettings.vim      " plugin specific settings
-source ~/.vim/functions.vim           " user-defined functions
-source ~/.vim/keybindings.vim         " custom keybindings
+source $VIMHOME/config/pluginsettings.vim      " plugin specific settings
+source $VIMHOME/config/functions.vim           " user-defined functions
+source $VIMHOME/config/keybindings.vim         " custom keybindings
