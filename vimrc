@@ -62,7 +62,7 @@ set textwidth=78
 set hidden
 set colorcolumn=80
 set number
-set relativenumber
+" set relativenumber  <- I don't really like this that much
 set noequalalways
 set dir=~/.vim/swap
 set nobackup writebackup
@@ -90,6 +90,11 @@ try
 catch /^Vim\%((\a\+)\)\=:E185/
     colorscheme ron
 endtry
+
+" try to mimic the relative number highlight, without the relative
+hi CursorLine cterm=NONE ctermfg=NONE ctermbg=NONE gui=NONE guifg=NONE guibg=NONE
+hi CursorLineNR ctermfg=11 cterm=bold guifg=#ffff00 gui=bold
+set cursorline
 
 " automatically reload vimrc and gvimrc on save
 autocmd! bufwritepost vimrc source %
