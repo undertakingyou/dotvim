@@ -35,6 +35,7 @@ Plug 'scrooloose/nerdtree'             " file tree
 " window management
 Plug 'roman/golden-ratio'
 Plug 'vim-scripts/tinykeymap'
+Plug 'qpkorr/vim-bufkill'
 
 " coding/editing
 Plug 'SirVer/ultisnips'                " textmate style snippets
