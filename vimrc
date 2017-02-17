@@ -102,6 +102,10 @@ hi CursorLine cterm=NONE ctermfg=NONE ctermbg=NONE gui=NONE guifg=NONE guibg=NON
 hi CursorLineNR ctermfg=11 cterm=bold guifg=#ffff00 gui=bold
 set cursorline
 
+" try and pretify any js files
+autocmd FileType javascript set formatprg=prettier\ --stdin
+autocmd BufWritePre *.js :normal gggqG
+
 " automatically reload vimrc and gvimrc on save
 autocmd! bufwritepost vimrc source %
 autocmd! bufwritepost gvimrc source %

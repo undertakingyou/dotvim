@@ -60,6 +60,7 @@ Plug 'dyng/ctrlsf.vim'                 " search project
 " syntax files
 Plug 'plasticboy/vim-markdown'         " markdown syntax highlighting
 Plug 'pangloss/vim-javascript'         " javascript utils
+Plug 'vim-syntastic/syntastic'         " syntax highlighting
 
 " undo
 Plug 'sjl/gundo.vim'                   " undo tree
