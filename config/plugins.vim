@@ -10,6 +10,18 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC | Startify | Ql
 endif
 
+" ### Function to build YCM {{{1
+"----------------------------------------------------------------------------"
+function! BuildYCM(info)
+    " info is a dictionary with 3 fields
+    " - name: Name of the plugin
+    " - status: 'installed', 'updated' or 'unchanged'
+    " - force: set on PlugInstall! or PlugUpdate!
+    if a:info.status == 'installed' || a:info.force
+        !./install.py
+    endif
+endfunction
+
 " ### PLUGIN LIST {{{1
 "----------------------------------------------------------------------------"
 call plug#begin('~/.vim/plugins')
@@ -53,6 +65,7 @@ Plug 'kshenoy/vim-signature'           " visible marks
 Plug 'vim-scripts/Align'
 Plug 'godlygeek/tabular'               " align text, even tables
 Plug 'townk/vim-autoclose'             " autoclose opening characters
+Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 
 " search
 Plug 'haya14busa/incsearch.vim'
