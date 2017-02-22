@@ -64,7 +64,7 @@ Plug 'michaeljsmith/vim-indent-object' " for selecting indent objects
 Plug 'kshenoy/vim-signature'           " visible marks
 Plug 'vim-scripts/Align'
 Plug 'godlygeek/tabular'               " align text, even tables
-Plug 'townk/vim-autoclose'             " autoclose opening characters
+Plug 'Raimondi/delimitMate'            " autoclose opening characters
 Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 
 " search
