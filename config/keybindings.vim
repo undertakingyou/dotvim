@@ -144,7 +144,7 @@ nmap <silent> <space>tn :set number!<cr>
 
 " toggle search highlighting
 nmap <silent> <space>th :set nohlsearch!<cr>
-" remove last search 
+" remove last search
 nmap <silent> ,, :noh<cr>
 
 " golden ratio
