@@ -128,6 +128,7 @@ nmap <space>bh :Startify<cr>
 "----------------------------------------------------------------------------"
 map - :call NetRWCurrentFile()<cr>
 nmap <silent> <space>fn :call NERDTreeCurrentFile()<cr>
+map <space>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " ### SESSIONS {{{1
 "----------------------------------------------------------------------------"
