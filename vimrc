@@ -89,13 +89,10 @@ if has('vim_starting')
     endif
 endif
 
-" try to enable monokai theme, but if that fails, choose `ron`
-try
-    colorscheme monokai
-    set background=dark
-catch /^Vim\%((\a\+)\)\=:E185/
-    colorscheme ron
-endtry
+" enable monokai colorscheme
+set background=dark
+" colorscheme monokai I like monokai, but lets try jellybeans for a little bit
+colorscheme jellybeans
 
 " try to mimic the relative number highlight, without the relative
 hi CursorLine cterm=NONE ctermfg=NONE ctermbg=NONE gui=NONE guifg=NONE guibg=NONE
