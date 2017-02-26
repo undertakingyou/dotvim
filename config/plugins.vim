@@ -91,7 +91,7 @@ Plug 'Lokaltog/vim-easymotion'         " much quicker movement
 Plug 'vim-scripts/quit-another-window'
 
 " colorschemes
-Plug 'synic/jellybeans.vim'
+Plug 'undertakingyou/jellybeans.vim'
 Plug 'jnurmine/Zenburn'
 Plug 'morhetz/gruvbox'
 Plug 'synic/synic.vim'

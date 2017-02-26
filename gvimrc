@@ -7,7 +7,7 @@ else
     let g:os = substitute(system('uname'), '\n', '', '')
     if g:os == "Linux"
         " If here we have Linux, and we are using gvim
-        set guifont=Monospace\ Regular\ 10
+        set guifont=Liberation\ Mono\ for\ Powerline\ Regular\ 10
     else
         " If here, we must have Mac, and are using MacVim
         set guifont=Source\ Code\ Pro\ for\ Powerline:h12
