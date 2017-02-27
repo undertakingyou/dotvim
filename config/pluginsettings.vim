@@ -173,11 +173,20 @@ let g:pymode_options = 0
 " auto-reload this file when saving
 autocmd! bufwritepost pluginsettings.vim source %
 
-" vim-jsx
+" ### vim-jsx {{{1
+"----------------------------------------------------------------------------"
 let g:jsx_ext_required = 0
 let g:syntastic_javascript_checkers = ['eslint']
 
-" youcompleteme
+" ### youcompleteme {{{1
+"----------------------------------------------------------------------------"
 let g:ycm_autoclose_preview_window_after_completion=1
+
+" ### delimitMate {{{1
+"----------------------------------------------------------------------------"
+let delimitMate_nesting_quotes = ['"','`']
+let delimitMate_expand_cr = 2
+let delimitMate_expand_space = 1
+let delimitMate_jump_expansion = 1
 
 " vim:foldmethod=marker
