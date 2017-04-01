@@ -59,6 +59,7 @@ Plug 'jmcantrell/vim-virtualenv'       " virtualenv
 Plug 'ntpeters/vim-better-whitespace'  " removes spurious whitespace
 Plug 'tpope/vim-commentary'            " quickly toggle comments
 Plug 'szw/vim-tags'
+Plug 'terryma/vim-multiple-cursors'    " multiedit within Vim
 Plug 'davidhalter/jedi-vim'            " python autocomplete
 Plug 'michaeljsmith/vim-indent-object' " for selecting indent objects
 Plug 'kshenoy/vim-signature'           " visible marks
