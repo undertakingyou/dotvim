@@ -15,6 +15,9 @@ if 0 | endif
 " set $VIMHOME so we can load configuration files from the correct place
 let $VIMHOME = expand('<sfile>:p:h')
 
+" Allow linting and syntastic (only used for JS)
+let g:ale_emit_conflict_warnings = 0
+
 " load plugins
 source $VIMHOME/config/plugins.vim
 
