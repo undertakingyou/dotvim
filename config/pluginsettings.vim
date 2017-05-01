@@ -112,9 +112,9 @@ if filereadable(expand('~/.cache/startify_bookmarks.vim'))
     source ~/.cache/startify_bookmarks.vim
 else
     let g:startify_bookmarks = [
-        \ {'eventboard.io': '/Users/undertakingyou/Projects/eventboard.io'},
-        \ {'mmc2': '/Users/undertakingyou/Projects/mmc2'},
-        \ {'mmc2-frontend': '/Users/undertakingyou/Projects/mmc2-frontend'},
+        \ {'eventboard.io': '~/Projects/eventboard.io'},
+        \ {'mmc2': '~/Projects/mmc2'},
+        \ {'mmc2-frontend': '~/Projects/mmc2-frontend'},
         \ ]
 endif
 
