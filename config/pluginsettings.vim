@@ -74,6 +74,7 @@ let ctrlp_dir_ignore =
     \ '(\.svn|\.git|\.hg|node_modules|globalstatic|dumps|sql|build|dist|docs)$'
 let g:ctrlp_custom_ignore = {
         \ 'dir': ctrlp_dir_ignore,
+        \ 'file': 'node_modules',
     \ }
 let g:ctrlp_buffer_func = {'enter': 'CtrlPMappings'}
 let g:ctrlp_command = 'CtrlPMixed'
