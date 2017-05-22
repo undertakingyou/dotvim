@@ -165,6 +165,14 @@ nmap <silent> <space>sp :call SearchInProjectRoot()<cr>
 " gundo
 nmap <silent> <space>ag :GundoToggle<cr>
 
+" ### OTHER COMMANDS {{{1
+"----------------------------------------------------------------------------"
+" cammands that I wanted quickly accessed
+" Pretty up the JSON. Requires python, and edits file.
+nmap <silent> <space>pj :%!python -m json.tool<cr>
+" Pretty print XML. Edits the file.
+nmap <silent> <space>px :%!xmllint --format %<cr>
+
 " ### FOOTER/MODELINE {{{1
 "----------------------------------------------------------------------------"
 " auto-reload this file when saving
