@@ -28,6 +28,7 @@ map *  <plug>(incsearch-nohl-*)
 map #  <plug>(incsearch-nohl-#)
 map g* <plug>(incsearch-nohl-g*)
 map g# <plug>(incsearch-nohl-g#)
+nmap <silent> <space>hd :HighlightRepeats<cr>
 
 " ### GIT/REVISION CONTROL {{{1
 "----------------------------------------------------------------------------"
