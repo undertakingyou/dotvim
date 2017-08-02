@@ -74,6 +74,7 @@ let ctrlp_dir_ignore =
     \ '(\.svn|\.git|\.hg|node_modules|globalstatic|dumps|sql|build|dist|docs)$'
 let g:ctrlp_custom_ignore = {
         \ 'dir': ctrlp_dir_ignore,
+        \ 'file': 'node_modules',
     \ }
 let g:ctrlp_buffer_func = {'enter': 'CtrlPMappings'}
 let g:ctrlp_command = 'CtrlPMixed'
@@ -111,11 +112,14 @@ let g:startify_custom_header = [
 if filereadable(expand('~/.cache/startify_bookmarks.vim'))
     source ~/.cache/startify_bookmarks.vim
 else
-    let g:startify_bookmarks = [
-        \ {'eventboard.io': '/Users/undertakingyou/Projects/eventboard.io'},
-        \ {'mmc2': '/Users/undertakingyou/Projects/mmc2'},
-        \ {'mmc2-frontend': '/Users/undertakingyou/Projects/mmc2-frontend'},
-        \ ]
+    let directory = "~/Projects/"
+    let directory_list = globpath(directory, '*', 0, 1)
+    let bookmarks = []
+    for dir in directory_list
+        let dir_parts = split(dir, '/')
+        call add(bookmarks, {dir_parts[-1]: dir})
+    endfor
+    let g:startify_bookmarks = bookmarks
 endif
 
 let g:startify_list_order = ['bookmarks', 'files', 'sessions']
