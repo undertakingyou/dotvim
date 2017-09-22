@@ -103,6 +103,7 @@ hi CursorLineNR ctermfg=11 cterm=bold guifg=#ffff00 gui=bold
 set cursorline
 
 " try and pretify any js files
+autocmd BufWritePost *.js,*.jsx call prettier#run(1)
 " Commented because it doesn't allow flexibility. Now working in git commit
 " autocmd FileType javascript set formatprg=prettier\ --stdin
 " autocmd BufWritePre *.js :normal gggqG
