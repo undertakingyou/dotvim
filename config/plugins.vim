@@ -36,6 +36,7 @@ Plug 'python-mode/python-mode'
 Plug 'mxw/vim-jsx'                     " JSX Specific tools
 Plug 'pangloss/vim-javascript'         " Javascript Highlighter
 Plug 'elzr/vim-json'                   " JSON Formatting and pretty
+Plug 'heavenshell/vim-prettier'        " Prettier Wrapper
 
 " home screen
 Plug 'mhinz/vim-startify'              " pretty start page
