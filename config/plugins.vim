@@ -77,6 +77,7 @@ Plug 'plasticboy/vim-markdown'         " markdown syntax highlighting
 Plug 'pangloss/vim-javascript'         " javascript utils
 Plug 'vim-syntastic/syntastic'         " syntax highlighting
 Plug 'joukevandermaas/vim-ember-hbs'   " Handlebars syntax highlighting
+Plug 'leafgarland/typescript-vim'
 
 " undo
 Plug 'sjl/gundo.vim'                   " undo tree
