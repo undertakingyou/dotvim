@@ -55,7 +55,8 @@ let g:gist_post_private = 1
 
 " ### airblade/vim-gitgutter {{{1
 "----------------------------------------------------------------------------"
-let g:gitgutter_sign_column_always = 1
+" let g:gitgutter_sign_column_always = 1  AN UPDATE CHANGED THIS SETTING
+set signcolumn=yes
 
 
 " ### ajreybert/vimagit {{{1
