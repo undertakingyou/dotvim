@@ -104,7 +104,7 @@ endif
 " ### mhinz/vim-startify {{{1
 "----------------------------------------------------------------------------"
 let g:startify_custom_header = [
-    \ '    __     ________  __',
+    \ '    __     _____ __  __',
     \ '    \ \   / /_ _|  \/  |',
     \ ' ____\ \ / / | || |\/| |_____',
     \ '|_____\ V /  | || |  | |_____|',
@@ -178,7 +178,7 @@ let g:pymode_trim_whitespaces = 1
 " ### leafgarland/typescript-vim {{{1
 "----------------------------------------------------------------------------"
 autocmd Filetype typescript setlocal ts=2 sts=2 sw=2
-let g:typescript_indent_disable = 1
+let g:typescript_indent_disable = 0
 
 " ### FOOTER/MODELINE {{{1
 "----------------------------------------------------------------------------"
@@ -202,6 +202,7 @@ let delimitMate_expand_space = 1
 let delimitMate_expand_inside_quotes = 1
 let delimitMate_jump_expansion = 0
 let delimitMate_balance_matchpairs = 1
-au FileType c,perl,javascript,typescript let b:delimitMate_eol_marker = ";"
+" This line is actually driving me nuts
+" au FileType c,perl,javascript,typescript let b:delimitMate_eol_marker = ";"
 
 " vim:foldmethod=marker
