@@ -162,6 +162,7 @@ nmap <silent> <space>pd :NERDTreeClose<cr>
 " project searching
 nmap <silent> <space>* :CtrlSF<cr>
 nmap <silent> <space>sp :call SearchInProjectRoot()<cr>
+nmap <silent> <space>st :CtrlSFToggle<cr>
 
 " gundo
 nmap <silent> <space>ag :GundoToggle<cr>
