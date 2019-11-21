@@ -52,7 +52,8 @@ Plug 'vim-scripts/tinykeymap'
 Plug 'qpkorr/vim-bufkill'
 
 " coding/editing
-Plug 'SirVer/ultisnips'                " textmate style snippets
+" This command broke the world, so I am removing it.
+" Plug 'SirVer/ultisnips'                " textmate style snippets
 Plug 'honza/vim-snippets'              " the actual snippest themselves
 Plug 'tpope/vim-surround'              " add, change, delete surround text
 Plug 'w0rp/ale'
@@ -67,7 +68,8 @@ Plug 'kshenoy/vim-signature'           " visible marks
 Plug 'vim-scripts/Align'
 Plug 'godlygeek/tabular'               " align text, even tables
 Plug 'Raimondi/delimitMate'            " autoclose opening characters
-Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
+" This command broke the world, so I am removing it.
+" Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 
 " search
 Plug 'haya14busa/incsearch.vim'
