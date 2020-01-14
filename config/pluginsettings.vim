@@ -171,14 +171,40 @@ let g:virtualenv_auto_activate = 1
 
 " ### python-mode/python-mode {{{1
 "----------------------------------------------------------------------------"
+let g:pymode = 1
 let g:pymode_folding = 1
-let g:pymode_lint = 0
-let g:pymode_rope = 0
-let g:pymode_options = 0
+let g:pymode_indent = 1
+let g:pymode_options = 1
+" Linting
+let g:pymode_lint = 1
+let g:pymode_lint_on_fly = 0
+let g:pymode_lint_message = 1
+let g:pymode_lint_checkers = ['pyflakes', 'pep8']
+let g:pymode_lint_ignore = ['F401', ]
+let g:pymode_lint_cwindow = 0
+let g:pymode_lint_signs = 1
+" Rope
+let g:pymode_rope = 1
+let g:pymode_rope_completion = 1
+let g:pymode_rope_complete_on_dot = 1
+let g:pymode_rope_goto_definition_bind = '<space>g'
+let g:pymode_rope_goto_definition_cmd = 'new'
+let g:pymode_rope_autoimport = 0
+let g:pymode_rope_autoimport_import_after_complete = 0
+let g:pymode_rope_rename_bind = '<space>rr'
+let g:pymode_rope_rename_module_bind = '<space>r1r'
+let g:pymode_rope_organize_imports_bind = '<space>ro'
+let g:pymode_rope_autoimport_bind = '<space>ra'
+let g:pymode_rope_change_signature_bind = '<space>rs'
+" Other
+let g:pymode_motion = 1
+let g:pymode_virtualenv = 1
 let g:pymode_trim_whitespaces = 1
 if has('python3')
     silent! python3 1
 endif
+let g:pymode_options_max_line_length = 79
+let g:pymode_options_colorcolumn = 1
 
 " ### leafgarland/typescript-vim {{{1
 "----------------------------------------------------------------------------"
@@ -196,8 +222,9 @@ let g:jsx_ext_required = 0
 let g:syntastic_javascript_checkers = ['eslint']
 
 " ### youcompleteme {{{1
+" YouCompleteMe has been removed due to weirdness with the app.
 "----------------------------------------------------------------------------"
-let g:ycm_autoclose_preview_window_after_completion=1
+" let g:ycm_autoclose_preview_window_after_completion=1
 
 " ### delimitMate {{{1
 "----------------------------------------------------------------------------"

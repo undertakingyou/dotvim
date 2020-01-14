@@ -166,6 +166,6 @@ command! -range=% HighlightRepeats <line1>,<line2>call HighlightRepeats()
 " ### FOOTER/MODELINE {{{1
 "----------------------------------------------------------------------------"
 " auto-reload this file when saving
- 
+
 autocmd! bufwritepost functions.vim source %
 " vim:foldmethod=marker

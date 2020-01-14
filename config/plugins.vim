@@ -30,7 +30,7 @@ call plug#begin('~/.vim/plugins')
 Plug 'hynek/vim-python-pep8-indent'    " for auto indenting pep8 style
 " Plug 'python-rope/ropevim'           " refactoring, finding occurrences
                                        " Seems broken, so commented.
-Plug 'python-mode/python-mode'
+Plug 'python-mode/python-mode', {'for': 'python', 'branch': 'develop'}
 
 " Javascript, JSX
 Plug 'mxw/vim-jsx'                     " JSX Specific tools
@@ -81,6 +81,7 @@ Plug 'pangloss/vim-javascript'         " javascript utils
 Plug 'vim-syntastic/syntastic'         " syntax highlighting
 Plug 'joukevandermaas/vim-ember-hbs'   " Handlebars syntax highlighting
 Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 
 " undo
 Plug 'sjl/gundo.vim'                   " undo tree
