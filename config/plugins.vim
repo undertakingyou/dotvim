@@ -28,9 +28,10 @@ call plug#begin('~/.vim/plugins')
 
 " python specific plugins
 Plug 'hynek/vim-python-pep8-indent'    " for auto indenting pep8 style
-" Plug 'python-rope/ropevim'           " refactoring, finding occurrences
-                                       " Seems broken, so commented.
-Plug 'python-mode/python-mode', {'for': 'python', 'branch': 'develop'}
+Plug 'python-rope/ropevim'             " refactoring, finding occurrences
+Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
+Plug 'nvie/vim-flake8'                 " PEP 8 checking
+Plug 'jmcantrell/vim-virtualenv'       " virtualenv
 
 " Javascript, JSX
 Plug 'mxw/vim-jsx'                     " JSX Specific tools
@@ -57,19 +58,15 @@ Plug 'qpkorr/vim-bufkill'
 Plug 'honza/vim-snippets'              " the actual snippest themselves
 Plug 'tpope/vim-surround'              " add, change, delete surround text
 Plug 'w0rp/ale'
-Plug 'jmcantrell/vim-virtualenv'       " virtualenv
 Plug 'ntpeters/vim-better-whitespace'  " removes spurious whitespace
 Plug 'tpope/vim-commentary'            " quickly toggle comments
 Plug 'szw/vim-tags'
 Plug 'terryma/vim-multiple-cursors'    " multiedit within Vim
-Plug 'davidhalter/jedi-vim'            " python autocomplete
 Plug 'michaeljsmith/vim-indent-object' " for selecting indent objects
 Plug 'kshenoy/vim-signature'           " visible marks
 Plug 'vim-scripts/Align'
 Plug 'godlygeek/tabular'               " align text, even tables
 Plug 'Raimondi/delimitMate'            " autoclose opening characters
-" This command broke the world, so I am removing it.
-" Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 
 " search
 Plug 'haya14busa/incsearch.vim'
@@ -82,6 +79,7 @@ Plug 'vim-syntastic/syntastic'         " syntax highlighting
 Plug 'joukevandermaas/vim-ember-hbs'   " Handlebars syntax highlighting
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
+Plug 'kylef/apiblueprint.vim'          " APIB syntax highlighting
 
 " undo
 Plug 'sjl/gundo.vim'                   " undo tree
