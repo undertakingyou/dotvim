@@ -179,6 +179,7 @@ let g:airline#extensions#tabline#show_buffers = 0
 let g:airline#extensions#tabline#show_tab_type = 0
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#branch#displayed_head_limit = 19
+let g:airline#extensions#virtualenv#enabled = 0
 let g:airline_section_y = '%{virtualenv#statusline()}'
 
 " ### jmcantrell/vim-virtualenv {{{1

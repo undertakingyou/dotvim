@@ -61,7 +61,7 @@ Plug 'w0rp/ale'
 Plug 'ntpeters/vim-better-whitespace'  " removes spurious whitespace
 Plug 'tpope/vim-commentary'            " quickly toggle comments
 Plug 'szw/vim-tags'
-Plug 'terryma/vim-multiple-cursors'    " multiedit within Vim
+Plug 'mg979/vim-visual-multi'          " multiedit within Vim
 Plug 'michaeljsmith/vim-indent-object' " for selecting indent objects
 Plug 'kshenoy/vim-signature'           " visible marks
 Plug 'vim-scripts/Align'
