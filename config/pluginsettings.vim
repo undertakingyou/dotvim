@@ -45,6 +45,17 @@ let g:lt_location_list_toggle_map = '<space>el'
 " ### w0rp/ale {{{1
 "----------------------------------------------------------------------------"
 let g:ale_sign_column_always = 1
+let g:ale_fixers = {
+      \   'javascript': ['eslint'],
+      \   'go': ['gofmt', 'goimports'],
+      \   'python': ['autopep8'],
+      \ }
+
+let g:ale_linters = {
+      \   'go': ['govet', 'gofmt', 'golint', 'gopls'],
+      \   'python': ['pylint', 'pyls'],
+      \   'cs': ['OmniSharp'],
+      \ }
 
 " ### python-rope/ropevim {{{1
 "----------------------------------------------------------------------------"

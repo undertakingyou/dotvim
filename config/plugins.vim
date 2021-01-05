@@ -39,6 +39,9 @@ Plug 'pangloss/vim-javascript'         " Javascript Highlighter
 Plug 'elzr/vim-json'                   " JSON Formatting and pretty
 Plug 'heavenshell/vim-prettier'        " Prettier Wrapper
 
+" GoLang specific plugins
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 " home screen
 Plug 'mhinz/vim-startify'              " pretty start page
 
